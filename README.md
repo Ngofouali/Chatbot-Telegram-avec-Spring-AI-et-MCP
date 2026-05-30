@@ -1,37 +1,6 @@
-# 🤖 Chatbot Spring AI MCP — Telegram, RAG & Microservices
+# Chatbot Spring AI MCP — Telegram, RAG & Microservices
 
-> README pédagogique inspiré de la série de vidéos **"AI Agent Chatbot With Spring AI MCP and Telegram Client"** de **Mohamed Youssfi** ([vidéo source](https://www.youtube.com/watch?v=Q12plqwksxk) — repo de référence : [`mohamedYoussfi/chatbot-spring-ai-mcp-telegram-client`](https://github.com/mohamedYoussfi/chatbot-spring-ai-mcp-telegram-client)).
-
-Ce document décrit pas à pas la construction d'un agent conversationnel basé sur **Spring AI**, exposant ses capacités via le **protocole MCP (Model Context Protocol)**, consommé depuis un **bot Telegram**, enrichi par un **système RAG (Retrieval-Augmented Generation)**, puis intégré dans une **architecture micro-services** complète.
-
----
-
-## 📑 Table des matières
-
-- [Vue d'ensemble](#-vue-densemble)
-- [Prérequis](#-prérequis)
-- [PARTIE 1 — Chatbot Spring AI + MCP + Telegram](#-partie-1--chatbot-spring-ai--mcp--telegram)
-  - [1.1 Architecture cible](#11-architecture-cible)
-  - [1.2 Création du Bot Telegram](#12-création-du-bot-telegram-via-botfather)
-  - [1.3 Module `mcp-server` (outils métier)](#13-module-mcp-server--outils-métier)
-  - [1.4 Module `chatbot-core` (Spring AI + MCP Client)](#14-module-chatbot-core--spring-ai--mcp-client)
-  - [1.5 Module `telegram-client`](#15-module-telegram-client)
-  - [1.6 Démarrage et tests](#16-démarrage-et-tests)
-- [PARTIE 2 — Ajout du système RAG](#-partie-2--ajout-du-système-rag)
-  - [2.1 Principe du RAG](#21-principe-du-rag)
-  - [2.2 Nouveau module `rag-service`](#22-nouveau-module-rag-service)
-  - [2.3 Ingestion de documents](#23-ingestion-de-documents)
-  - [2.4 Exposition du RAG comme outil MCP](#24-exposition-du-rag-comme-outil-mcp)
-  - [2.5 Intégration côté `chatbot-core`](#25-intégration-côté-chatbot-core)
-- [PARTIE 3 — Architecture micro-services](#-partie-3--architecture-micro-services)
-  - [3.1 Vue cible](#31-vue-cible)
-  - [3.2 Config Server](#32-config-server)
-  - [3.3 Service Discovery (Eureka)](#33-service-discovery-eureka)
-  - [3.4 API Gateway](#34-api-gateway)
-  - [3.5 Sécurité (Keycloak / OAuth2)](#35-sécurité-keycloak--oauth2)
-  - [3.6 Observabilité](#36-observabilité)
-  - [3.7 Docker Compose & déploiement](#37-docker-compose--déploiement)
-- [Roadmap & ressources](#-roadmap--ressources)
+Ce repo décrit pas à pas la construction d'un agent conversationnel basé sur **Spring AI**, exposant ses capacités via le **protocole MCP (Model Context Protocol)**, consommé depuis un **bot Telegram**, enrichi par un **système RAG (Retrieval-Augmented Generation)**, puis intégré dans une **architecture micro-services** complète.
 
 ---
 
