@@ -1043,6 +1043,3 @@ docker compose up --build
 - Repo Partie 1 : <https://github.com/mohamedYoussfi/chatbot-spring-ai-mcp-telegram-client>
 
 ---
-
-> ✍️ **Licence** : code d'exemple sous MIT.
-> Pull requests et issues bienvenues.
