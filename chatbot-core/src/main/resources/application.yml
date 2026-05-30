@@ -1,0 +1,22 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: chatbot-core
+
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      chat:
+        model: openai
+
+    mcp:
+      client:
+        streamable-http:
+          connections:
+            mcp-tools-server:
+              url: http://localhost:8090
+              # Partie 2 : On ajoutera ici le rag-service
+              # rag-service :
+              # url : http://localhost:8091

@@ -1,0 +1,17 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: mcp-server
+
+  ai:
+    mcp:
+      server:
+        name: mcp-tools-server
+        version: 1.0.0
+        type: sync
+        transport:
+          sse:
+            endpoint: /mcp/sse
+            message-endpoint: /mcp/message
